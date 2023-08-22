@@ -1,11 +1,7 @@
 num = int(input("escreva um número"))
-a = 1103515245
-c = 12345
-m = 2**31
-
-def num_ale(seed):
-    seed = (a * seed + c) % m
-    return seed
+def num_ale(i):
+    i = (1103515245 * i + 12345) % (2**31)
+    return i
 
 nums = []
 for _ in range(100):
