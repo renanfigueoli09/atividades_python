@@ -1,5 +1,5 @@
-import pandas
-titanic = pandas.read_csv("mineracao_dados/titanic.csv", sep=",")
+import pandas as pd
+titanic = pd.read_csv('titanic.csv')
 titanic.head()
 type(titanic)
 titanic.head(10)
